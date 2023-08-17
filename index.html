@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="container mx-auto">
+        <section class="bg-indigo-400 p-20">
+            <h1 class="text-3xl text-white pb-4 text-center">Text Editor</h1>
+            <div class="w-full flex justify-between">
+                <ul class="flex gap-4 w-1/3">
+                    <li id="bold-btn" class="cursor-pointer select-none">B</li>
+                    <li id="italic-btn" class="italic cursor-pointer select-none">I</li>
+                    <li id="underline-btn" class="cursor-pointer select-none">U</li>
+                </ul>
+                <ul id="align-positoin" class="flex gap-4 justify-center w-1/3">
+                    <li id="align" class="cursor-pointer text-white"><i id="left" class="fa-solid fa-align-left"></i>
+                    </li>
+                    <li id="align" class="cursor-pointer"><i id="center" class="fa-solid fa-align-center"></i></li>
+                    <li id="align" class="cursor-pointer"><i id="right" class="fa-solid fa-align-right"></i></li>
+                    <li id="align" class="cursor-pointer"><i id="justify" class="fa-solid fa-align-justify"></i></li>
+                </ul>
+                <ul class="flex gap-4 w-1/3 justify-end">
+                    <li>
+                        <select name="font-size" id="font-size">
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="20">20</option>
+                            <option value="22">22</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                        </select>
+                    </li>
+                    <li id="case" class="select-none cursor-pointer">aA</li>
+                    <li><input class="outline-none" type="color" name="" id="color-input"></li>
+                </ul>
+            </div>
+            <textarea id="my-text-input" class="w-full p-2 focus:outline-none max-h-60" name="" id=""
+                rows="10"></textarea>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
